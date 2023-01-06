@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>POKEDEX WEB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link  href="styles.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body class="mat-typography">
+    <div class="header" >
+        <h2>La Pokedex Xanxa!</h2> 
+     </div>
+
+    <div class="listado">
+        <p><strong>Listado de Pokemons:</strong></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="opcion">
+                <tr>
+                    <td>Bulbasur</td>
+                    <td><button>Ver Detalles</button></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><button style="color: white; background: black;" onclick="cargaAnterior()">Ant.</button></td>
+                    <td><button style="color: white; background: black;" onclick="cargaSiguiente()">Sig.</button></td>
+                </tr>
+            </tfoot>
+        </table>   
+    </div>
+    <div class="linea">
+        <hr>
+    </div>
+    
+    <div class="detalle">
+        <p class="parrafo">Detalle del Pokemon:</p>
+        <br>
+        <br>
+        <!-- <strong></strong> -->
+        <div class="imagen" id="imageee">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfYxKsiYbatjvAmjCLzykND-DfvEnSQs74Tg&usqp=CAU">
+        </div>
+        <br>
+        <div class="detalle_data" id="data_det">
+            <p>Nombre: Jose Andre</p>
+            <p>Peso: Jose Andre</p>
+            <p>Altura: Jose Andre</p>
+
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
